@@ -6,8 +6,6 @@ const a = true;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {a ? <App /> : <h1>Hello from JS in JSX</h1>}
-  </React.StrictMode>
+    <App /> 
 );
 

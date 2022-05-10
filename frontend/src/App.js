@@ -13,7 +13,7 @@ const App = () => {
     console.log(word);
   }
 
-  
+  console.log(word)
   
   return (
     <div>
@@ -21,6 +21,7 @@ const App = () => {
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit}/>
     </div>
   );
+  
 }
 
 export default App;
