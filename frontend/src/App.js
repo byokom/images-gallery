@@ -4,7 +4,7 @@ import Header from './components/Header.js';
 const App = () => {
   return (
     <div>
-      <Header title="Images Gallery" />
+      <Header title="Images Gallery 2" />
     </div>
   );
 }
