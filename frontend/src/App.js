@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {useState} from 'react';
+import { createRoot } from 'react-dom/client';
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header.js';
 import Search from './components/Search.js';
@@ -9,11 +9,12 @@ import Search from './components/Search.js';
 
 const App = () => {
   const [word, setWord] = useState('')
-  
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     console.log(word)
   }
+  console.log(word)
   return (
     <div>
       <Header title="Images Gallery 2" />
@@ -21,5 +22,6 @@ const App = () => {
     </div>
   );
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
 export default App;
