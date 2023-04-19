@@ -1,9 +1,9 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './css/index.css';
-import App from './App';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./css/index.css";
+import App from "./App";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
   // Use existing root
@@ -14,4 +14,3 @@ if (rootElement.hasChildNodes()) {
   //console.log('Create new root')
   createRoot(rootElement).render(<App />);
 }
-
