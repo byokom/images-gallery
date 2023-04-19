@@ -1,11 +1,12 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header.js";
 import Search from "./components/Search.js";
 
 const UNSPASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
+
+
 
 const App = () => {
   const [word, setWord] = useState("");
