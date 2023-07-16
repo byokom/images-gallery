@@ -46,13 +46,6 @@ const App = () => {
         ) : (
           <Welcome />
         )}
-        <Row xs={1} md={2} lg={3}>
-          {images.map((image, i) => (
-            <Col key={i} className="pb-3">
-              <ImageCard image={image} deleteImage={handleDeleteImage} />
-            </Col>
-          ))}
-        </Row>
       </Container>
     </div>
   );
